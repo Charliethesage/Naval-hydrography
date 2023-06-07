@@ -21,6 +21,6 @@ module.exports = ({ env }) => ({
 
 
     'users-permissions': {
-        jwtSecret: 'FBleMhzTccg1jjMsE2JjWQ==',
+        jwtSecret: env('JWT_SECRET', 'FBleMhzTccg1jjMsE2JjWQ=='),
       },
 })
