@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 
 module.exports = ({ env }) => ({
 //  email plugin
@@ -21,6 +22,8 @@ module.exports = ({ env }) => ({
 
 
     'users-permissions': {
-        jwtSecret: env('JWT_SECRET', 'FBleMhzTccg1jjMsE2JjWQ=='),
+        config: {
+          jwtSecret: env('JWT_SECRET') || crypto.randomBytes(16).toString('base64'),
+        },
       },
 })
