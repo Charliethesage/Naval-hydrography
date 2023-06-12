@@ -1,5 +1,5 @@
 module.exports = ({ env }) => ({
-    url: env("RENDER_EXTERNAL_URL"),
+    url: "https://naval-hydrography963.onrender.com",
     dirs: {
       public: "/data/public"
     },
