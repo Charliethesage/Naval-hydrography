@@ -13,9 +13,11 @@
   "dependencies": {
     "@strapi/plugin-i18n": "4.5.3",
     "@strapi/plugin-users-permissions": "4.5.3",
-    "@strapi/provider-upload-cloudinary": "^4.11.0",
+    "@strapi/provider-email-nodemailer": "^4.11.1",
+    "@strapi/provider-upload-cloudinary": "^4.11.1",
     "@strapi/strapi": "4.5.3",
     "better-sqlite3": "7.4.6",
+    "nodemailer": "^6.9.3",
     "pg": "^8.11.0"
   },
   "author": {
